@@ -100,3 +100,13 @@ zig cc -target aarch64-linux-musl -static -Os -s -Wall -Wextra src/init.c -o dis
 ## Licensing & Trademark Boundary
 - `awesome-os/t2xnu` ships **only open-source orchestration, CAS hydration, and loader glue** (`MIT` / `APSL-2.0` upstream XNU via `awesome-os/upstream-mirrors @ mirror/xnulinux`).
 - `t2xnu` **never** redistributes proprietary Apple macOS userspace files — users bring their own legally obtained system disk image.
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Install globally via awesome-os/pnpm (all platforms)
+pnpm add -g github:awesome-os/t2xnu
+
+# Run directly (all platforms)
+t2xnu --help
+```
