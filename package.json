@@ -1,0 +1,14 @@
+{
+  "name": "@awesome-os/t2xnu",
+  "version": "0.1.0",
+  "description": "T2XNU — ARM64 T2Linux (Linux 7.0+) + AFK-surf/xnulinux (fki.ko/xnu.ko) zero-hypervisor dual-personality OS layer powered by b8g-ghost CAS",
+  "type": "module",
+  "main": "./src/index.mts",
+  "scripts": {
+    "test": "node --test test/t2xnu.test.mts"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
