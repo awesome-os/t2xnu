@@ -1,0 +1,84 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/t2xnu",
+  "targets": [
+    "linux-arm64"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/t2xnu/init-aarch64",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "247ec4e389e21f28e7ac471ef44d4ac3d48d95f8c243004fef9243395f8b392a4800f9dc00b6535f74bcf6c1936e44d914a609d5244b5dbdc36af85cb51fc5cc",
+      "size": 67464,
+      "executable": true,
+      "blob": "v11/files/24/247ec4e389e21f28e7ac471ef44d4ac3d48d95f8c243004fef9243395f8b392a4800f9dc00b6535f74bcf6c1936e44d914a609d5244b5dbdc36af85cb51fc5cc-exec",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/init-aarch64",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/t2xnu/initramfs-aarch64.cpio.zst",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "de2de85cc18ac555a9ce605628d9ff7c59f1f59fd7e3e80e062ce4e985373d26fe259311405fda82e5f4faf05a89367c5fb2219697a6a3d830774528cb4d7b45",
+      "size": 1045480,
+      "executable": false,
+      "blob": "v11/files/de/de2de85cc18ac555a9ce605628d9ff7c59f1f59fd7e3e80e062ce4e985373d26fe259311405fda82e5f4faf05a89367c5fb2219697a6a3d830774528cb4d7b45",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/initramfs-aarch64.cpio.zst",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/t2xnu/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "8dab3d6a222d67539cd6bed9849a34d627c6be207951c8797bd3a0f64c0acf794f11b5a689c5f3f6eae9ba3d6faddce70a1c3c961ecf2f4699ca3e716d0d6fe3",
+      "size": 424,
+      "executable": false,
+      "blob": "v11/files/8d/8dab3d6a222d67539cd6bed9849a34d627c6be207951c8797bd3a0f64c0acf794f11b5a689c5f3f6eae9ba3d6faddce70a1c3c961ecf2f4699ca3e716d0d6fe3",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/SHA256SUMS.txt",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/t2xnu/t2xnu-aarch64.iso",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "4851c45459ad445faeb4ded5568c14ac28470f76b8115334866eedd5e19373ba85ba08efffbebbe1eb45c800cc847de85ad6b55dc188fb8e4baf92947622df2d",
+      "size": 27873280,
+      "executable": false,
+      "blob": "v11/files/48/4851c45459ad445faeb4ded5568c14ac28470f76b8115334866eedd5e19373ba85ba08efffbebbe1eb45c800cc847de85ad6b55dc188fb8e4baf92947622df2d",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/t2xnu-aarch64.iso",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/t2xnu/t2xnu-aarch64.qcow2",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "e68c4d4c3f5ed94e8737f8616ea96adf39d272b719f0375ddccd7765c82905834f3781c033d120cc2a007c232bc7e07666a5579f23413cee2f8e6c8c1f843080",
+      "size": 23461376,
+      "executable": false,
+      "blob": "v11/files/e6/e68c4d4c3f5ed94e8737f8616ea96adf39d272b719f0375ddccd7765c82905834f3781c033d120cc2a007c232bc7e07666a5579f23413cee2f8e6c8c1f843080",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/t2xnu-aarch64.qcow2",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/t2xnu/vmlinuz-aarch64",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "c94d1e492170499939f9ee964d005b3fc6c43111a74a73067b3e81ec727db2e5d2464b393ff965d8ae7513ec3dad943fb03ee22d51427287a687ebc9078215c8",
+      "size": 21987566,
+      "executable": false,
+      "blob": "v11/files/c9/c94d1e492170499939f9ee964d005b3fc6c43111a74a73067b3e81ec727db2e5d2464b393ff965d8ae7513ec3dad943fb03ee22d51427287a687ebc9078215c8",
+      "url": "https://github.com/awesome-os/t2xnu/releases/download/v0.1.0/vmlinuz-aarch64",
+      "dependencies": []
+    }
+  ]
+}
