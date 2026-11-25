@@ -69,6 +69,23 @@ jobs:
             ln -sf busybox "$ROOTFS/bin/$cmd"
           done
 
+          ARCH="aarch64"
+          COREUTILS_URL="https://github.com/awesome-os/coreutils/releases/latest/download/coreutils-linux-${ARCH}-musl"
+          COREUTILS_HTTP="$(curl -sSL -o "$ROOTFS/bin/coreutils" -w '%{http_code}' "$COREUTILS_URL" || true)"
+          if [ "$COREUTILS_HTTP" = "200" ] && [ -s "$ROOTFS/bin/coreutils" ]; then
+            chmod 0755 "$ROOTFS/bin/coreutils"
+            for cmd in ls cat cp mv rm mkdir ln chmod stat uname env pwd echo head tail wc sort uniq cut tr sha256sum sha512sum base64 sleep true false dd df du sync touch realpath readlink tee date nproc dirname basename; do
+              ln -sf coreutils "$ROOTFS/bin/$cmd"
+            done
+          elif [ "$COREUTILS_HTTP" = "404" ]; then
+            echo "WARN: $COREUTILS_URL returned 404; falling back to busybox for coreutils applets" >&2
+            rm -f "$ROOTFS/bin/coreutils"
+          else
+            echo "ERROR: unexpected HTTP status $COREUTILS_HTTP fetching $COREUTILS_URL" >&2
+            rm -f "$ROOTFS/bin/coreutils"
+            exit 1
+          fi
+
           if file build/cas-ghost-bin | grep -qi "statically linked"; then
             cp build/cas-ghost-bin "$ROOTFS/bin/b8g-ghost"
             chmod 755 "$ROOTFS/bin/b8g-ghost"
