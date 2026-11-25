@@ -104,9 +104,9 @@ zig cc -target aarch64-linux-musl -static -Os -s -Wall -Wextra src/init.c -o dis
 ## Quick Install & Run (Windows / Linux / macOS)
 
 ```sh
-# Install globally via awesome-os/pnpm (all platforms)
-pnpm add -g github:awesome-os/t2xnu
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/t2xnu@main
 
-# Run directly (all platforms)
-t2xnu --help
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://node/t2xnu?from=repository://github.com/awesome-os/t2xnu@main"
 ```
