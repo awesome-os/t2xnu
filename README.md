@@ -1,3 +1,5 @@
+> [!NOTE] Consolidated into the unified Holo v11 OS monorepo at https://github.com/awesome-os/awesome-os
+
 # `awesome-os/t2xnu`
 
 > **T2XNU (ARM64 Linux + [`AFK-surf/xnulinux`](https://github.com/AFK-surf/xnulinux) `fki.ko` + `xnu.ko`) — sovereign bootable ARM64 UEFI ISO & QEMU QCOW2 powered by `b8g-ghost @ cas-v1`.**
